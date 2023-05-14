@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-Нолики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="start-page" class="start-screen">
+        <h1>Добро пожаловать в игру Крестики-Нолики!</h1>
+        <p>Это классическая игра крестики-нолики. Вы можете играть против другого игрока или против компьютера.</p>
+        <button class="start-game">Перейти к игре</button>
+    </div>
+
+    <div id="game-container" class="container" style="display: none;">
+        <h1>Крестики-нолики</h1>
+        <div class="settings">
+            <label for="player-mode">Режим игры:</label>
+            <select class="player-mode" id="player-mode">
+                <option value="vs-player">Игрок против Игрока</option>
+                <option value="vs-ai">Игрок против Компьютера</option>
+            </select>
+            <label class="difficulty-label" for="difficulty" >Сложность:</label>
+            <select class="difficulty" id="difficulty" style="display: none;">
+                <option value="easy">Легко</option>
+                <option value="medium">Средне</option>
+                <option value="hard">Сложно</option>
+            </select>
+            <button class="new-game">Новая игра</button>
+        </div>
+        <div class="game">
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+        </div>
+        <div class="res"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
